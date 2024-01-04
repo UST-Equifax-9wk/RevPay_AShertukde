@@ -1,0 +1,38 @@
+<div class="container">
+    
+    <h1>Add a card</h1>
+    <div *ngIf="message">
+        {{message}}
+     </div>
+    <p>Please fill in this form to add a debit/credit card</p>
+    <label><strong>CardNumber 16 digit</strong> </label>
+    <input [(ngModel)]="card.card_number" placeholder="xxxxxxxxxxxxxxxxx" type="text">
+    
+    <div>
+    <label><strong>CardType</strong></label>
+    <select [(ngModel)]="card.card_type"><option value="debit" selected>debit</option>
+        <option value = "credit">credit</option></select>
+    </div>
+    <div>
+    <label><strong>ExpirationDate </strong></label>
+    <input [(ngModel)]="card.expiration_date" placeholder="mm/yy" type="text">
+    </div>
+    <div>
+<button (click)="registerCard()" class="registerbtn">add card</button>
+</div>
+<div class="container">
+    
+    <h1>All Cards Added</h1>
+    <ul>
+    <li *ngFor="let element of cards">
+        <div class="card2">
+
+            <p><strong>Card Number:</strong> {{element.card_number}}</p>
+            <p><strong>Type:</strong> {{element.card_type}}</p>
+            <p>
+                <strong>Expiration Date:</strong>{{element.expiration_date}}
+            </p>
+        </div>
+    </li>
+    </ul>
+</div>

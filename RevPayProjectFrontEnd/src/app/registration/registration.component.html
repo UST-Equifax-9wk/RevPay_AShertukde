@@ -1,0 +1,36 @@
+
+<div class="container">
+    <div *ngIf="message">
+        {{message}}
+     </div>
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <label><strong>Username</strong> </label>
+    <input [(ngModel)]="user.username" placeholder="username" type="text">
+    
+    <div>
+    <label><strong>Password </strong></label>
+    <input [(ngModel)]="user.password" placeholder="password" type="password">
+    </div>
+    <div>
+    <label><strong>Email </strong></label>
+    <input [(ngModel)]="user.email" placeholder="email" type="email">
+    </div>
+    <div>
+    <label><strong>Phone </strong></label>
+    <input [(ngModel)]="user.phone" placeholder="phonenumber" type="text">
+    </div>
+    <div>
+    <label><strong>Firstname </strong></label>
+    <input [(ngModel)]="user.firstname" placeholder="firstname" type="text">
+    </div>
+    <div>
+    <label><strong>Lastname </strong></label>
+    <input [(ngModel)]="user.lastname" placeholder="lastname" type="text">
+    </div>
+<button (click)="registerUser()" class="registerbtn">register</button>
+</div>
+<div class="container signin">
+    <p>Already have an account? <a routerLink='/login'>Sign in</a>.</p>
+    <p>Want a Business Account? <a routerLink='/businessregistration'>Register Here</a></p>
+  </div>

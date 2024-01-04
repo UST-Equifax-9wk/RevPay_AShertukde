@@ -1,0 +1,35 @@
+<div class="card">
+    <div *ngIf="message">
+        {{message}}
+     </div>
+    <div *ngIf="authorities=='[USER]'">
+        <h1>Enter Any Settings You Want to Change</h1>
+        <strong><label>FirstName: {{user?.firstname}} </label></strong><input type="text" [(ngModel)]="firstname"
+            placeholder="{{user?.firstname}}">
+        <strong><label>LastName: {{user?.lastname}} </label></strong><input type="text" [(ngModel)]="lastname"
+            placeholder="{{user?.lastname}}">
+        <strong><label>Username: {{user?.username}} </label></strong><input type="text" [(ngModel)]="usernamechange"
+            placeholder="{{user?.username}}">
+        <strong><label>Email: {{user?.email}} </label></strong><input type="text" [(ngModel)]="email"
+            placeholder="{{user?.email}}">
+        <strong><label>Phone: {{user?.phone}} </label></strong><input type="text" [(ngModel)]="phone"
+            placeholder="{{user?.phone}}">
+        <strong><label>Enter New Password If You Would Like to Change It</label></strong><input type="password"
+            [(ngModel)]="password" placeholder="******">
+        <button (click)="changeUser()" class="registerbtn">Change Settings</button>
+    </div>
+    <div *ngIf="authorities=='[BUSINESS]'">
+        <h1>Enter Any Settings You Want to Change</h1>
+        <strong><label>BusinessName: {{business.business_name}} </label></strong><input type="text" [(ngModel)]="firstname"
+            placeholder="{{business.business_name}}">
+        <strong><label>Username: {{business.username}} </label></strong><input type="text" [(ngModel)]="usernamechange"
+            placeholder="{{business.username}}">
+        <strong><label>Email: {{business.email}} </label></strong><input type="text" [(ngModel)]="email"
+            placeholder="{{business.email}}">
+        <strong><label>Phone: {{business.phone}} </label></strong><input type="text" [(ngModel)]="phone"
+            placeholder="{{business.phone}}">
+        <strong><label>Enter New Password If You Would Like to Change It</label></strong><input type="password"
+            [(ngModel)]="password" placeholder="******">
+        <button (click)="changeUser()" class="registerbtn">Change Settings</button>
+    </div>
+</div>

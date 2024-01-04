@@ -1,0 +1,103 @@
+<div class="parent">
+    <div class="card">
+        <h1>Name: {{user?.firstname}} {{user?.lastname}}</h1>
+        <p>Username: {{user?.username}}</p>
+        <p class="title">Email: {{user?.email}}</p>
+        <p class="title">Phone: {{user?.phone}}</p>
+    </div>
+    <div *ngIf="!money;then add else show"></div>
+    <ng-template #add>
+        <div class="card">
+            <h1>Add a balance</h1>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="balance">
+            <button class="registerbtn" (click)="submitBalance()">Submit</button>
+        </div>
+    </ng-template>
+    <ng-template #show>
+        <div class="card">
+            <h1>Your Balance</h1>
+            <h2>
+                <p>${{money?.balance}}</p>
+            </h2>
+        </div>
+    </ng-template>
+</div>
+<div *ngIf="money">
+    <div class="card">
+        <h1>Request Money From Users</h1>
+        <div *ngIf="message">
+            {{message}}
+        </div>
+        <div>
+            <select [(ngModel)]="selection">
+                <option value="username">username</option>
+                <option value="email">email</option>
+                <option value="phone">phone</option>
+            </select>
+            <input type="text" placeholder='{{selection}}' [(ngModel)]="identifier">
+            <button class="registerbtn" (click)="getSender()">Select Valid User</button>
+        </div>
+        <div *ngIf="sender">
+            <h5>Amount to Request</h5>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="amount">
+
+            <button class="registerbtn" (click)="requestMoney()">Submit</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="money">
+    <div class="card">
+        <h1>Send Money To Users</h1>
+        <div *ngIf="message2">
+            {{message2}}
+        </div>
+        <div>
+            <select [(ngModel)]="selection2">
+                <option value="username">username</option>
+                <option value="email">email</option>
+                <option value="phone">phone</option>
+            </select>
+            <input type="text" placeholder='{{selection2}}' [(ngModel)]="identifier2">
+            <button class="registerbtn" (click)="getReceiver()">Select Valid User</button>
+        </div>
+        <div *ngIf="receiver">
+            <h5>Amount to Send</h5>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="amount2">
+
+            <button class="registerbtn" (click)="sendingMoney()">Submit</button>
+        </div>
+    </div>
+</div>
+<div *ngIf="money">
+    <div class="card">
+        <h1>Send Money To Business</h1>
+        <div *ngIf="message3">
+            {{message3}}
+        </div>
+        <div>
+            <label>Business Username: </label><input type="text" [(ngModel)]="identifier3">
+            <button class="registerbtn" (click)="getBusiness()">Select Valid Business</button>
+        </div>
+        <div *ngIf="business">
+            <h5>Amount to Send</h5>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="amount3">
+
+            <button class="registerbtn" (click)="sendingBusinessMoney()">Submit</button>
+        </div>
+    </div>
+</div>
+
+
+<ul>
+    <li *ngFor="let element of transactions" (click)="highlightSelected(element)">
+        <div class="card2" style="float:right;">
+            <h1>Transaction Request</h1>
+            <p>Amount: {{element.amount}}</p>
+            <p>From: {{element.receiver?.userAccounts?.username}}</p>
+            <p>
+                click to send
+            </p>
+        </div>
+    </li>
+</ul>

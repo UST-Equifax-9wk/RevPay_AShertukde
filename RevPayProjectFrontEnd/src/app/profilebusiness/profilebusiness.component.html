@@ -1,0 +1,47 @@
+<div>
+    <h1>Name: {{user?.business_name}}</h1>
+    <p>Username: {{user?.username}}</p>
+    <p class="title">Email: {{user?.email}}</p>
+    <p class="title">Phone: {{user?.phone}}</p>
+</div>
+<div *ngIf="!money;then add else show"></div>
+    <ng-template #add>
+        <div class="card">
+            <h1>Add a balance</h1>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="balance">
+            <button class="registerbtn" (click)="submitBalance()">Submit</button>
+        </div>
+    </ng-template>
+    <ng-template #show>
+        <div class="card">
+            <h1>Your Balance</h1>
+            <h2>
+                <p>${{money?.balance}}</p>
+            </h2>
+        </div>
+    </ng-template>
+<div *ngIf="money">
+    <div class="card">
+        <h1>Request Loan Amount</h1>
+        <div *ngIf="message">
+            {{message}}
+        </div>
+        <div>
+            <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="amount">
+            <button class="registerbtn" (click)="submitLoan()">Get Loan</button>
+        </div>
+    </div>
+</div>
+
+<ul>
+    <li *ngFor="let element of loans;let i = index" >
+        <div class="card2">
+            <h1>Loan {{i+1}}</h1>
+            <p>Amount: ${{element.amount}}</p>
+            <div>
+                <input type="number" placeholder="Enter Amount" value="0" step=".01" [(ngModel)]="amount2">
+                <button class="registerbtn" (click)="paymentLoan(element)">pay part of loan</button>
+            </div>
+        </div>
+    </li>
+</ul>

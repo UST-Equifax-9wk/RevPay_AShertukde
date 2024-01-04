@@ -1,0 +1,30 @@
+<table >
+  <caption>Transaction History</caption>
+  <tr>
+    <th>Date</th>
+    <th>Username of Recipient/Sender</th>
+    <th>Amount Transferred</th>
+  </tr>
+  <tr *ngFor="let element of transactions">
+    <td>{{element.date_sent}}</td>
+    <td *ngIf="element.sender" style="text-align: center;">{{element.sender.userAccounts?.username}}</td>
+    <td *ngIf="element.receiver" style="text-align: center;">{{element.receiver.userAccounts?.username || element.receiver.businessAccounts?.username}}</td>
+    <td style="text-align: center;"><span *ngIf="element.receiver">-</span><span
+        *ngIf="element.sender">+</span>${{element.amount}}</td>
+  </tr>
+
+</table>
+<table style="float:right;" *ngIf="authorities=='[BUSINESS]'">
+  <caption>Loan History</caption>
+  <tr>
+    <th>Date Paid</th>
+    <th>Original Loan Amount</th>
+    <th>Fully Paid back</th>
+  </tr>
+  <tr *ngFor="let element of loans">
+    <td>{{element.end_date}}</td>
+    <td style="text-align: center;">${{element.amount}}</td>
+    <td style="text-align: center;"><span *ngIf="element.paidback;else templateName">&#10004;</span><ng-template #templateName></ng-template></td>
+  </tr>
+
+</table>

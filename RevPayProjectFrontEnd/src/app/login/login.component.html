@@ -1,0 +1,34 @@
+<!--<div *ngIf="expression">
+    You have been logged out.</div>-->
+<div class="container">
+  <h1>Log In</h1>
+  <div *ngIf="log">
+    {{log}}</div>
+  <div>
+    <label><strong>Username </strong></label> <input [(ngModel)]="login.username" type="text" placeholder="Username" />
+  </div>
+  <div>
+    <label><strong>Password</strong> </label> <input [(ngModel)]="login.password" type="password"
+      placeholder="Password" />
+  </div>
+  <button (click)="submitlogin()" class="registerbtn">Login</button>
+  <button (click)="forgotPass()">Forgot Password? </button>
+  <div *ngIf="toggler">
+    <label><strong>Email</strong></label> <input [(ngModel)]="email" type="text" placeholder="email" />    
+
+    <button (click)="submitEmail()" class="registerbtn">Submit Email</button>
+  </div>
+  <div *ngIf="toggler2">
+  <label><strong>Enter Authentication Code In Email:</strong> </label> <input [(ngModel)]="authentication" type="text"
+      placeholder="authentication" />
+      <button (click)="submitAuthentication()" class="registerbtn">Submit Authentication Code</button>
+    </div>
+    <div *ngIf="toggler3">
+      <label><strong>Enter New Password</strong> </label> <input [(ngModel)]="password" type="text"
+          placeholder="password" />
+          <button (click)="submitPassword()" class="registerbtn">Submit Password</button>
+        </div>
+        <div *ngIf="message">
+          {{message}}
+      </div>
+</div>

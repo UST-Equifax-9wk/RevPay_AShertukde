@@ -1,0 +1,40 @@
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+table {
+  border: 1px solid #5c743d;
+  width: 600px;
+  float:left;
+  border-spacing: 0;
+  margin: auto;
+}
+
+td,
+th {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+caption {
+  font-family: Arial;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+tr:nth-of-type(even) {
+  background-color: #eaeaea;
+}
+
+tr:first-of-type {
+  background-color: blue;
+  color: #eaeaea;
+}
