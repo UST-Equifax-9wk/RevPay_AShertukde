@@ -1,0 +1,126 @@
+2024-01-03 17:14:59,841 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 17:14:59,874 [main] INFO  c.Revature.RevPay.RevPayApplication - Starting RevPayApplication using Java 17.0.9 with PID 36260 (C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay\target\classes started by MyUser in C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay)
+2024-01-03 17:14:59,875 [main] INFO  c.Revature.RevPay.RevPayApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-03 17:15:00,400 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 17:15:00,456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 7 JPA repository interfaces.
+2024-01-03 17:15:00,826 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-01-03 17:15:00,831 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-03 17:15:00,832 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-03 17:15:00,832 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-03 17:15:00,871 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-03 17:15:00,871 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 963 ms
+2024-01-03 17:15:00,976 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 17:15:01,014 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-03 17:15:01,039 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-03 17:15:01,200 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 17:15:01,218 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-03 17:15:01,931 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6ec3d8e4
+2024-01-03 17:15:01,932 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-03 17:15:02,829 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 17:15:04,375 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 17:15:04,740 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03 17:15:04,931 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@129b0ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ccf1d3e, org.springframework.security.web.context.SecurityContextHolderFilter@20843604, org.springframework.security.web.header.HeaderWriterFilter@3d96b8fb, org.springframework.web.filter.CorsFilter@75ff2b6d, org.springframework.security.web.authentication.logout.LogoutFilter@268f126f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6af02de0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31d8352e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d82d35c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20a7ce0, org.springframework.security.web.access.ExceptionTranslationFilter@20524816, org.springframework.security.web.access.intercept.AuthorizationFilter@71d8794f]
+2024-01-03 17:15:05,078 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-03 17:15:05,095 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-01-03 17:15:05,102 [main] INFO  c.Revature.RevPay.RevPayApplication - Started RevPayApplication in 5.489 seconds (process running for 5.964)
+2024-01-03 17:22:12,051 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-03 17:22:12,051 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-03 17:22:12,052 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-03 17:22:12,076 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/UserAccounts' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-03 18:10:32,722 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.Revature.RevPay.repositories.UserAccountsRepositoryTests]: UserAccountsRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-03 18:10:32,883 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.Revature.RevPay.RevPayApplication for test class com.Revature.RevPay.repositories.UserAccountsRepositoryTests
+2024-01-03 18:10:34,676 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 18:10:34,757 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - Starting UserAccountsRepositoryTests using Java 17.0.9 with PID 60904 (started by MyUser in C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay)
+2024-01-03 18:10:34,760 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - No active profile set, falling back to 1 default profile: "default"
+2024-01-03 18:10:35,431 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 18:10:35,531 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 7 JPA repository interfaces.
+2024-01-03 18:10:35,616 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-01-03 18:10:35,931 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:6613becf-2207-4e0f-87c8-f92b4de494b3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-01-03 18:10:36,283 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 18:10:36,402 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-03 18:10:36,452 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-03 18:10:36,568 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 18:10:37,278 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 18:10:37,341 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:10:38,263 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - Started UserAccountsRepositoryTests in 4.145 seconds (process running for 6.318)
+2024-01-03 18:10:38,667 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:12:21,418 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.Revature.RevPay.repositories.UserAccountsRepositoryTests]: UserAccountsRepositoryTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-03 18:12:21,565 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.Revature.RevPay.RevPayApplication for test class com.Revature.RevPay.repositories.UserAccountsRepositoryTests
+2024-01-03 18:12:21,885 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 18:12:21,923 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - Starting UserAccountsRepositoryTests using Java 17.0.9 with PID 31832 (started by MyUser in C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay)
+2024-01-03 18:12:21,924 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - No active profile set, falling back to 1 default profile: "default"
+2024-01-03 18:12:22,391 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 18:12:22,496 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 7 JPA repository interfaces.
+2024-01-03 18:12:22,590 [main] INFO  o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-01-03 18:12:22,843 [main] INFO  o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:460563ee-f11d-4d9d-a776-9c28c2ea3ac4;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-01-03 18:12:23,100 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 18:12:23,181 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-03 18:12:23,213 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-03 18:12:23,513 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 18:12:24,408 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 18:12:24,470 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:12:25,388 [main] INFO  c.R.R.r.UserAccountsRepositoryTests - Started UserAccountsRepositoryTests in 3.736 seconds (process running for 4.766)
+2024-01-03 18:12:25,969 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:14:19,685 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:14:19,688 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-03 18:14:20,267 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-03 18:14:46,950 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 18:14:46,987 [main] INFO  c.Revature.RevPay.RevPayApplication - Starting RevPayApplication using Java 17.0.9 with PID 58788 (C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay\target\classes started by MyUser in C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay)
+2024-01-03 18:14:46,989 [main] INFO  c.Revature.RevPay.RevPayApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-03 18:14:47,512 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 18:14:47,565 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 7 JPA repository interfaces.
+2024-01-03 18:14:47,945 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-01-03 18:14:47,949 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-03 18:14:47,950 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-03 18:14:47,950 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-03 18:14:47,989 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-03 18:14:47,989 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 971 ms
+2024-01-03 18:14:48,093 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 18:14:48,131 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-03 18:14:48,156 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-03 18:14:48,318 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 18:14:48,336 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-03 18:14:49,082 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18d610e1
+2024-01-03 18:14:49,083 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-03 18:14:49,974 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 18:14:51,536 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:14:51,894 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03 18:14:52,090 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@625c9248, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c1ef806, org.springframework.security.web.context.SecurityContextHolderFilter@74cad577, org.springframework.security.web.header.HeaderWriterFilter@4c376b44, org.springframework.web.filter.CorsFilter@969c2f9, org.springframework.security.web.authentication.logout.LogoutFilter@78d52d4c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@183435c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2bbaf1bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@65852d05, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7bbc11ed, org.springframework.security.web.access.ExceptionTranslationFilter@7325b786, org.springframework.security.web.access.intercept.AuthorizationFilter@7e8f97dd]
+2024-01-03 18:14:52,239 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-03 18:14:52,255 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-01-03 18:14:52,261 [main] INFO  c.Revature.RevPay.RevPayApplication - Started RevPayApplication in 5.531 seconds (process running for 6.003)
+2024-01-03 18:37:52,050 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-01-03 18:37:52,050 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-01-03 18:37:52,051 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-01-03 18:37:52,075 [http-nio-8080-exec-2] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/UserAccounts' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-01-03 18:57:22,786 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 18:57:22,789 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-03 18:57:23,343 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-01-03 19:10:55,058 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-01-03 19:10:55,096 [main] INFO  c.Revature.RevPay.RevPayApplication - Starting RevPayApplication using Java 17.0.9 with PID 30232 (C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay\target\classes started by MyUser in C:\Users\pvssp\Documents\Arvin\Project\RevPay_AShertukde\RevPay)
+2024-01-03 19:10:55,097 [main] INFO  c.Revature.RevPay.RevPayApplication - No active profile set, falling back to 1 default profile: "default"
+2024-01-03 19:10:55,631 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-03 19:10:55,685 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 7 JPA repository interfaces.
+2024-01-03 19:10:56,059 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-01-03 19:10:56,064 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-01-03 19:10:56,065 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-01-03 19:10:56,065 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-01-03 19:10:56,106 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-01-03 19:10:56,106 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 982 ms
+2024-01-03 19:10:56,214 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-03 19:10:56,252 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-01-03 19:10:56,276 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-01-03 19:10:56,442 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-03 19:10:56,462 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-01-03 19:10:57,230 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@12aa381f
+2024-01-03 19:10:57,231 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-01-03 19:10:58,142 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-03 19:10:59,934 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 19:11:00,310 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-03 19:11:00,515 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@420068a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79d8075c, org.springframework.security.web.context.SecurityContextHolderFilter@467e7793, org.springframework.security.web.header.HeaderWriterFilter@5a644d75, org.springframework.web.filter.CorsFilter@4d4337f9, org.springframework.security.web.authentication.logout.LogoutFilter@5ce1ec7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55e02661, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@625c9248, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c1ef806, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e6f7c25, org.springframework.security.web.access.ExceptionTranslationFilter@69862a1, org.springframework.security.web.access.intercept.AuthorizationFilter@3b6c55b6]
+2024-01-03 19:11:00,661 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-01-03 19:11:00,673 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-01-03 19:11:00,679 [main] INFO  c.Revature.RevPay.RevPayApplication - Started RevPayApplication in 5.839 seconds (process running for 6.326)
+2024-01-03 19:11:19,610 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-01-03 19:11:19,612 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-01-03 19:11:20,163 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
