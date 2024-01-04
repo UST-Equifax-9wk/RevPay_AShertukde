@@ -8,7 +8,8 @@ import org.springframework.context.ApplicationContext;
 		"com.Revature.RevPay.services",
 		"com.Revature.RevPay.controllers",
 		"com.Revature.RevPay.models",
-		"com.Revature.RevPay.repositories"
+		"com.Revature.RevPay.repositories",
+		"com.Revature.RevPay.config"
 })
 public class RevPayApplication {
 
