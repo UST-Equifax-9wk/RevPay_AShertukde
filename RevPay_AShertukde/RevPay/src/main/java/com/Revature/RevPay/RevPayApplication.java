@@ -8,12 +8,9 @@ import org.springframework.context.ApplicationContext;
 		"com.Revature.RevPay.services",
 		"com.Revature.RevPay.controllers",
 		"com.Revature.RevPay.models",
-<<<<<<< HEAD:RevPay_AShertukde/RevPay/src/main/java/com/Revature/RevPay/RevPayApplication.java
 		"com.Revature.RevPay.repositories",
 		"com.Revature.RevPay.config"
-=======
-		"com.Revature.RevPay.repositories"
->>>>>>> origin:RevPay/src/main/java/com/Revature/RevPay/RevPayApplication.java
+
 })
 public class RevPayApplication {
 
